@@ -1,8 +1,22 @@
 <script type="text/javascript" src="popup.js"></script>
 <script type="text/javascript" src="jquery-2.0.3.js"></script>
 
+<style>
+	#aphorism-edit-box {padding: 10px; width: 300px}
+	input, textarea, select {margin-bottom: 8px; width: 100%;}
+	textarea {height:10em;}
+</style>
+
 <div id='aphorism-edit-box'>
 	<input id="aphorism-created-at" type="text" name="createdAt" value="" />
 	<input id="aphorism-source" type="text" name="source" value="" />
+	<select id="aphorism-context" name="context">
+		<option value="">Finance</value>
+		<option value="">Philosophy</value>
+		<option value="">Entrepreneurship</value>
+		<option value="">Compsci</value>
+		<option value="">Science</value>
+	</select>
 	<textarea id="aphorism-text" type="text" name="text"></textarea>
+	<button id="submit-aphorism" type="submit" name="submit" value="" />Save</button>
 </div>
